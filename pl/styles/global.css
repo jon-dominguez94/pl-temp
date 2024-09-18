@@ -1,0 +1,38 @@
+:root {
+    --offwhite: #f0fdf7;
+    --lightblue: #1471bd;
+    --lighterblue: #089fdb;
+    --linen: #fff9f0;
+    --light: #f0f2f2;
+    --pl: #06a7dc;
+    --sky: #73c7e3;
+    --navy: #2e4a70;
+    --darkblue: #0b2637;
+}
+
+/* header, */
+/* body,
+footer {
+    overflow: hidden;
+} */
+
+body {
+    background-color: var(--darkblue);
+
+    color: white;
+    font-family: Poppins, sans-serif;
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin: 0.75em 0;
+}
+
+.pl-text {
+    color: var(--pl);
+}
