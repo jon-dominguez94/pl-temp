@@ -10,18 +10,28 @@
     --darkblue: #0b2637;
 }
 
-/* header, */
-/* body,
+header,
+body,
 footer {
-    overflow: hidden;
-} */
+    color: var(--offwhite);
+    /* width: 100vw; */
+}
 
 body {
-    background-color: var(--darkblue);
+    /* background-color: var(--darkblue); */
+    /* background: rgb(110, 113, 135); */
+        background: linear-gradient(100deg, rgba(110, 113, 135, 1) 0%,
+                rgba(33, 78, 122, 1) 0%,
+                rgba(13, 32, 43, 1) 84%,
+                rgba(13, 32, 43, 1) 100%);
+    /* background: linear-gradient(in hsl, blue, red); */
 
     color: white;
-    font-family: Poppins, sans-serif;
-    overflow: hidden;
+    font-family: Lobster, sans-serif;
+    /* font-family: Poppins, sans-serif; */
+
+    max-width: 100vw;
+    /* overflow: hidden; */
 }
 
 h1,
@@ -34,5 +44,14 @@ h6 {
 }
 
 .pl-text {
-    color: var(--pl);
+    /* color: linear-gradient(40deg, rgba(110, 113, 135, 1) 0%,
+            rgba(33, 78, 122, 1) 0%,
+            rgba(13, 32, 43, 1) 84%,
+            rgba(13, 32, 43, 1) 100%); */
+    /* color: var(--pl);
+    color: linear-gradient(white, black); */
+    background-image: linear-gradient(var(--pl), var(--navy));
+    color: transparent;
+    background-clip: text;
+
 }

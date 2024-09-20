@@ -6,9 +6,8 @@
     <title>Profit Lounge</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+    <link rel="stylesheet" href="styles/page.css">
     <script src="scripts/event-handling.js"></script>
 </head>
 <body>
@@ -17,7 +16,7 @@
             <h4>RESTOCK COMING! Follow us on X or join our public Discord server for more info</h3>
         </div>
         <nav class="nav">
-            <a href="index.html">
+            <a class="nav__left" href="index.html">
                 <img class="nav__logo" src="https://profitlounge.us/images/logo.png" alt="Profit Lounge Logo">
             </a>
             <div class="nav__links-container">
@@ -37,29 +36,74 @@
                     <h4 class="nav__link">Public Server</h4>
                 </a>
             </div>
-            <div id="nav__right" class="nav__right">
+            <div class="nav__right">
                 <a class="nav__button" href="">Join Waitlist</a>
                 <div id="nav__menu-icon" class="nav__menu-icon">
                     <i class="fa fa-bars"></i>
                 </div>
-                <div class="nav__dropdown dropdown--hidden">
-                    <ul class="dropdown__list">
-                        <li class="dropdown__link"><a href="#">Mission</a></li>
-                        <li class="dropdown__link"><a href="#">Success</a></li>
-                        <li class="dropdown__link"><a href="#">FAQ</a></li>
-                        <li class="dropdown__link"><a href="#">Contact</a></li>
-                        <li class="dropdown__link"><a href="#">Public Server</a></li>
-                    </ul>
-                </div>
             </div>
         </nav>
+        <div id="nav__dropdown" class="nav__dropdown dropdown--hidden">
+            <ul class="dropdown__list">
+                <li class="dropdown__link"><a href="#">Mission</a></li>
+                <li class="dropdown__link"><a href="#">Success</a></li>
+                <li class="dropdown__link"><a href="#">FAQ</a></li>
+                <li class="dropdown__link"><a href="#">Contact</a></li>
+                <li class="dropdown__link"><a href="#">Public Server</a></li>
+            </ul>
+        </div>
     </header>
+
     <main>
         <section class="main__hook">
             <h1 class="hook-title"><span class="pl-text">Profit</span> Lounge</h1>
+            <!-- <h1 class="hook-title">
+                <img src="images/pl-logo.png" alt="">
+            </h1> -->
             <h2 class="hook-subtitle">kickstart your reselling career</h2>
         </section>
+        <section>
+            <div class="features">
+                <div class="features__single">
+                    <div class="feature-block">
+                        <h2 class="feature-icon">&#x1F911</h2>
+                        <h4 class="feature-title">Deals & Discounts</h4>
+                    </div>
+                    <p class="feature-description">Tracking over 50 retailers on 1,000+ data-sources, we find deals seconds after they're created</p>
+                </div>
+                <div class="features__single">
+                    <div class="feature-block">
+                        <h2 class="feature-icon">&#x1F4B8</h2>
+                        <h4 class="feature-title">Price Errors</h4>
+                    </div>
+                    <p class="feature-description">State-of-the-Art software that catches company mistakes, helping you secure items at a fraction of what they're worth</p>
+                </div>
+                <div class="features__single">
+                    <div class="feature-block">
+                        <h2 class="feature-icon">&#x1F4DC</h2>
+                        <h4 class="feature-title">Education & Guides</h4>
+                    </div>
+                    <p class="feature-description">Access to information from experienced staff on a plethora of topics: accounts, LLCs, contacts, credit -- you name it</p>
+                </div>
+                <div class="features__single">
+                    <div class="feature-block">
+                        <h2 class="feature-icon">&#x1F514</h2>
+                        <h4 class="feature-title">Exclusive Flips</h4>
+                    </div>
+                    <p class="feature-description">Feeds with profitable items to flip and limited edition releases to score</p>
+                </div>
+                <div class="features__single">
+                    <div class="feature-block">
+                        <h2 class="feature-icon">&#x1F6D2</h2>
+                        <h4 class="feature-title">Tools & Utilities</h4>
+                    </div>
+                    <p class="feature-description">All at your fingertips, tools and utilities to help you get the edge on the competition. With automation, analysis,
+                    tracking, and more</p>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer></footer>
 </body>
 </html>
